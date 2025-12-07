@@ -1,0 +1,25 @@
+.container{
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lists{
+    list-style: none;
+}
+
+.item{
+    box-shadow: 1px 3px 17px 3px rgba(255,255,255,0.76);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.8;
+}
+
+.title{
+    min-width: 60%;
+}

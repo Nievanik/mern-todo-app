@@ -3,12 +3,16 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const Todo = require('./models/Todo.js');
 const app = express();
+const cors = require('cors');
 
 const todoRoutes = require('./routes/todoRoutes.js');
 
 //Middlewares
 app.use(express.json()); // For parsing application/json
 app.use(express.urlencoded({ extended: true })); // For parsing form data
+app.use(cors({
+  origin: 'http://localhost:5173' //  Vite frontend URL
+}));
 
 
 
